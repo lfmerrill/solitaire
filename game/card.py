@@ -10,3 +10,9 @@ class Card:
 
     def draw(self, screen, pos):
         screen.blit(self.image, pos)
+
+    def __str__(self) -> str:
+        return f"{self.rank} of {self.suit}"
+    
+    def __repr__(self) -> str:
+        return f"{self.rank} of {self.suit}"

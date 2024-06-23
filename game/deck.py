@@ -7,3 +7,6 @@ class Deck:
 
     def shuffle_cards(self):
         random.shuffle(self.cards)
+        
+    def add(self, card:Card):
+        self.cards.append(card)
