@@ -3,20 +3,23 @@ from pile import Pile
 from deck import Deck
 
 
+class solitaire:
+    def __init__(self) -> None:
+        pass
+
+
+def start_game():
+    pass
+
+
 def main():
     deck = Deck()
-    suits = ['clubs', 'diamonds', 'hearts', 'spades']
-    ranks = ['ace', '2', '3', '4', '5', '6', '7', '8',
-                    '9', '10', 'jack', 'queen', 'king']
-    
-    for suit in suits:
-        for rank in ranks:
-            deck.add(Card(suit,rank))
-    
-    # print(deck.cards)
+    deck.prepare_deck()
 
     deck.shuffle_cards()
-    print(deck.cards)
+    
+
+    # print(deck.cards)
 
 
 
